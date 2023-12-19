@@ -78,6 +78,7 @@ body {
     background-color: var(--white);
     width: 200px;
     margin-top: 24px;
+    padding: 0;
     border: none;
     color: var(--purple);
     text-align: center;
@@ -183,6 +184,10 @@ body {
         box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26);
         font-size: 18px;
         line-height: 27px;
+    }
+
+    .social {
+        margin-top: 27px;
     }
 
     .icons-container {
