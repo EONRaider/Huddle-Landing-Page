@@ -130,7 +130,7 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (width > 1500px) {
+@media only screen and (width > 1400px) {
     .feature {
         background-image: url("../images/bg-desktop.svg");
         background-repeat: no-repeat;
@@ -196,7 +196,7 @@ body {
     }
 }
 
-@media only screen and (width <= 1500px) {
+@media only screen and (width <= 1400px) {
     .feature {
         background-image: url("../images/bg-mobile.svg");
         background-repeat: no-repeat;
