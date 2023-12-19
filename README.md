@@ -1,9 +1,11 @@
 # Frontend Mentor - Project Name solution
 
-[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/EONRaider/Project-Name?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/eonraider/project-name)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/EONRaider/Huddle-Landing-Page?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/eonraider/huddle-landing-page)
 [![FrontendMentor](https://img.shields.io/badge/FrontendMentor-EONRaider-blue?style=flat-square)](https://www.frontendmentor.io/profile/EONRaider)
 
-This is a solution to the [](https://www.frontendmentor.io/challenges/project-name). Frontend Mentor challenges help you
+This is a solution to
+the [Huddle Landing Page](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0).
+Frontend Mentor challenges help you
 improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -19,10 +21,12 @@ improve your coding skills by building realistic projects.
 
 ### Screenshot
 
+![huddle-landing-page](https://github.com/EONRaider/Huddle-Landing-Page/assets/15611424/0d7bb061-a24e-47cd-9183-74a8b13ec4e8)
+
 ### Links
 
 - [My Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/project-name)
-- [Check the Live Site](https://project-name.netlify.app/)
+- [Check the Live Site](https://eonraider-huddle-landing-page.netlify.app/)
 
 ## My process
 
@@ -40,3 +44,7 @@ improve your coding skills by building realistic projects.
 - Cube CSS methodology
 
 ### What I learned
+
+- I understood and edited the attributes of an SVG for the first time. There is a significant difference between the
+  files provided by Frontend Mentor and the ones used in the final solutions. Pycharm Pro has a live preview feature
+  that makes this editing a lot easier than when one is limited to browser dev tools.

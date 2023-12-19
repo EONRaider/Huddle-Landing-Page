@@ -15,7 +15,7 @@ html {
 }
 
 /* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, p {
+body, h1, p {
     margin: 0;
 }
 
@@ -28,9 +28,241 @@ img {
 /* === END CSS RESET === */
 
 /* COMPOSITION */
+body {
+    min-height: 100vh;
+}
 
 /* UTILITIES */
+:root {
+    --white: #FFFFFF;
+    --purple: #684BB1;
+    --pink: #E880E8;
+}
+
+.flex-center-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-primary {
+    background-color: var(--purple);
+}
+
+.font-poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.font-open-sans {
+    font-family: "Open Sans", sans-serif;
+}
 
 /* BLOCK */
+.hero {
+    height: 100%;
+}
+
+.hero__title {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.hero__text {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.hero__button {
+    display: block;
+    background-color: var(--white);
+    width: 200px;
+    margin-top: 24px;
+    border: none;
+    color: var(--purple);
+    text-align: center;
+    font-weight: 400;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social__icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+#fb-icon {
+    background-image: url("../images/fb-logo.svg");
+}
+
+#tw-icon {
+    background-image: url("../images/tw-logo.svg");
+}
+
+#ig-icon {
+    background-image: url("../images/ig-logo.svg");
+}
 
 /* EXCEPTIONS */
+.social__icon:hover {
+    cursor: pointer;
+}
+
+#fb-icon:hover {
+    background-image: url("../images/fb-logo-hv.svg");
+}
+
+#tw-icon:hover {
+    background-image: url("../images/tw-logo-hv.svg");
+}
+
+#ig-icon:hover {
+    background-image: url("../images/ig-logo-hv.svg");
+}
+
+.hero__button:hover {
+    background-color: var(--pink);
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media only screen and (width > 1500px) {
+    .feature {
+        background-image: url("../images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        width: 1440px;
+        height: 800px;
+        padding: 64px 80px 40px 80px;
+    }
+
+    .logo {
+        max-width: 200px;
+        max-height: 32px;
+    }
+
+    .mockup {
+        width: 696px;
+        height: 493px;
+        flex-shrink: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 100px;
+        width: 100%;
+        height: 493px;
+    }
+
+    .hero {
+        width: 520px;
+    }
+
+    .hero__title {
+        margin-top: 32px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .hero__text {
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .hero__button {
+        height: 56px;
+        flex-shrink: 0;
+        border-radius: 28px;
+        box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26);
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .icons-container {
+        width: 152px;
+        margin-left: auto;
+    }
+
+    .social__icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (width <= 1500px) {
+    .feature {
+        background-image: url("../images/bg-mobile.svg");
+        background-repeat: no-repeat;
+        width: 375px;
+        height: 800px;
+        padding: 38px 39px 40px 40px;
+    }
+
+    .logo {
+        max-width: 120px;
+        max-height: 19px;
+    }
+
+    .mockup {
+        width: 296px;
+        height: 209px;
+        flex-shrink: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 67px;
+        width: 100%;
+    }
+
+    .hero {
+        width: 304px;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .hero__text {
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hero__button {
+        margin: 24px auto 0;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, 0.27);
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .social {
+        margin-top: 64px;
+    }
+
+    .icons-container {
+        width: 104px;
+        margin: 0 auto;
+    }
+
+    .social__icon {
+        width: 28px;
+        height: 28px;
+    }
+}
