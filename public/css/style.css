@@ -32,6 +32,12 @@ body {
     min-height: 100vh;
 }
 
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 /* UTILITIES */
 :root {
     --white: #FFFFFF;
@@ -85,44 +91,10 @@ body {
     font-weight: 400;
 }
 
-.icons-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social__icon {
-    display: inline-block;
-    background-repeat: no-repeat;
-}
-
-#fb-icon {
-    background-image: url("../images/fb-logo.svg");
-}
-
-#tw-icon {
-    background-image: url("../images/tw-logo.svg");
-}
-
-#ig-icon {
-    background-image: url("../images/ig-logo.svg");
-}
-
 /* EXCEPTIONS */
-.social__icon:hover {
+.footer__icon:hover {
     cursor: pointer;
-}
-
-#fb-icon:hover {
-    background-image: url("../images/fb-logo-hv.svg");
-}
-
-#tw-icon:hover {
-    background-image: url("../images/tw-logo-hv.svg");
-}
-
-#ig-icon:hover {
-    background-image: url("../images/ig-logo-hv.svg");
+    filter: brightness(0) saturate(100%) invert(78%) sepia(40%) saturate(2549%) hue-rotate(229deg) brightness(89%) contrast(104%);
 }
 
 .hero__button:hover {
@@ -186,16 +158,12 @@ body {
         line-height: 27px;
     }
 
-    .social {
+    footer {
         margin-top: 27px;
+        gap: 16px;
     }
 
-    .icons-container {
-        width: 152px;
-        margin-left: auto;
-    }
-
-    .social__icon {
+    .footer__icon {
         width: 40px;
         height: 40px;
     }
@@ -257,16 +225,13 @@ body {
         line-height: 18px;
     }
 
-    .social {
+    footer {
         margin-top: 64px;
+        justify-content: center;
+        gap: 11px;
     }
 
-    .icons-container {
-        width: 104px;
-        margin: 0 auto;
-    }
-
-    .social__icon {
+    .footer__icon {
         width: 28px;
         height: 28px;
     }
